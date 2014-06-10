@@ -11,7 +11,7 @@ needs to have.
  */
 
 //Base URL
-$base_url = 'http://localhost:8888/wfh/';
+$base_url = 'http://localhost:8888/wfh';
 
 
 // DB Variables

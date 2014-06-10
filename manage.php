@@ -102,6 +102,17 @@ function addItem($table,$value){
 	<button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
+<form action="" method="POST" role="form">
+	<legend>Add a new Image URL</legend>
+
+	<div class="form-group">
+		<label for="url">Image URL</label>
+		<input type="text" class="form-control" id="url" name="url" placeholder="something like '!' ">
+		<input type="hidden" id="table" name="table" value="images">
+	</div>
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
 <?php require 'views/footer.php'  ?>
 
 

@@ -114,7 +114,8 @@ function buildMeme($meme_array){
         <p class="text_bottom">'.$excuse.' '.$ending.'</p>
     </div>
 
-    <a href="'.$base_url.'index2.php?mid='.$meme_id.'"> Permalink </a>
+    <a href="'.$base_url.'/index.php?mid='.$meme_id.'"> Permalink </a>
+    <a href="'.$base_url.'"> New Meme </a>
     ';
 
     //Spit that shit out
