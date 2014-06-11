@@ -14,11 +14,16 @@ require 'config.php';
 MEME GENERATOR
 -------------- 
 
-One function to create a new meme,
-another function to generate a stored meme.
+Section contains three functions:
+
+getMeme() is a controller/dispatch function
+newMeme() generates a random meme and checks for uniqueness
+pullMeme() displays an existing meme given an ID
+buildMeme() is a helper function to build the actual meme HTML
 
  */
 
+// Determine if the HTTP request contains an ID for an existing meme and then dispatch to the right handler
 function getMeme(){
 	$meme_id = $_GET['mid'];
 
@@ -30,7 +35,7 @@ function getMeme(){
 }
 
 
-//Generate a new meme
+// Generate a random meme, check if it's a new one, and store in the DB if it is. 
 function newMeme(){
 
 	//Grab some globals from config
@@ -48,7 +53,7 @@ function newMeme(){
 		$text_query = "SELECT * FROM `".$text_field."` ORDER BY RAND() LIMIT 1";
 		$text_result = mysqli_query($db_connect, $text_query) or die($db_connect->error.__LINE__);
 		$text_row = $text_result->fetch_array(MYSQLI_ASSOC);
-		$text_array[] = $text_row['text'];
+		$text_array[] = mysql_real_escape_string($text_row['text']);
 	}
 
 	//Check if this fucker is unique
@@ -82,6 +87,7 @@ function newMeme(){
 }
 
 
+// Pull an existing meme from the DB
 function pullMeme($meme_id){
 	global $db_connect;
 
@@ -94,6 +100,7 @@ function pullMeme($meme_id){
 
 }
 
+// Construct the HTML content for our meme
 function buildMeme($meme_array){
 
 	global $base_url;
