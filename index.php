@@ -24,7 +24,7 @@ Build us some HTML to reflect the meme.
 <?php require 'views/header.php'; ?>
 
         <div class="main-container">
-            <div class="main wrapper clearfix">
+            <div class="main wrapper clearfix container">
 
 
             	<?php getMeme(); ?>

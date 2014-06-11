@@ -118,11 +118,13 @@ function buildMeme($meme_array){
 	$html = '
 	<div class="meme_image" style="background:transparent url('.$img_src.') no-repeat scroll top left; background-size:cover;">
         <p class="text_top">'.$statement.' '.$action.' '.$operator.'<p>
-        <p class="text_bottom">'.$excuse.' '.$ending.'</p>
+        <p class="text_bottom">'.$excuse.$ending.'</p>
     </div>
 
-    <a href="'.$base_url.'/index.php?mid='.$meme_id.'"> Permalink </a>
-    <a href="'.$base_url.'"> New Meme </a>
+    <div class="link-wrapper col-xs-3 col-sm-3 col-md-3 col-lg-3">
+	    <a href="'.$base_url.'/index.php?mid='.$meme_id.'"> Permalink </a> | 
+	    <a href="'.$base_url.'"> New Meme </a>    	
+    </div>
     ';
 
     //Spit that shit out
