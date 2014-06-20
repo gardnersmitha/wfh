@@ -6,11 +6,11 @@ Just a little meme generator for coming up with those pesky excuses for why it's
 
 #### TODO
 
-[ ] Build setup page with a form to accept inputs & script that dynamically generates the necessary DB & tables
-[ ] Password protect manage page
-[ ] Build ability to scrape a Facebook profile for images
-[ ] Test and update mobile views
-[ ] Make it look perrrty
+- [ ] Build setup page with a form to accept inputs & script that dynamically generates the necessary DB & tables
+- [ ] Password protect manage page
+- [ ] Build ability to scrape a Facebook profile for images
+- [ ] Test and update mobile views
+- [ ] Make it look perrrty
 
 
 
