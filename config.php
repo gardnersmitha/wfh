@@ -13,7 +13,6 @@ needs to have.
 //Base URL
 $base_url = 'http://localhost:8888/wfh';
 
-
 // DB Variables
 $db = 'wfh_original';
 $db_host = 'localhost';
