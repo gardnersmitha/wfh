@@ -27,6 +27,6 @@ if($db_connect->connect_errno > 0){
 }
 
 // Total fields
-$text_fields = ['statements','actions','operators','excuses','endings'];
+$text_fields = ['statements','actions','operators','excuses','endings'];	
 
 ?>
