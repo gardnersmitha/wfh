@@ -6,10 +6,13 @@ Just a little meme generator for coming up with those pesky excuses for why it's
 
 #### TODO
 
-- [ ] Build setup page with a form to accept inputs & script that dynamically generates the necessary DB & tables
+- [ ] Make the meme an actual image using ImageMagik or some shit
+- [ ] Add social sharing ability
+- [ ] Build setup page with a form to accept inputs & script that dynamically generates the necessary DB & tables so that we can quickly generate specific use-case generators (ex: the Ric generator)
 - [ ] Password protect manage page
 - [ ] Build ability to scrape a Facebook profile for images
 - [ ] Test and update mobile views
+- [ ] Refactor my god-awful procedural PHP
 - [ ] Make it look perrrty
 
 
